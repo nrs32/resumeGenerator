@@ -1,0 +1,61 @@
+.doubleUnderline {
+    border: 1.5px solid black;
+    border-left: none;
+    border-right: none;
+    height: 2px;
+    margin-bottom: 6px;
+}
+
+.singleUnderline {
+    border: 1.5px solid black;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    margin-bottom: 1.5em;
+}
+
+.sectionHeader {
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: normal;
+    font-size: 1.2em;
+}
+
+.paper {
+    height: calc(11in - 15px);
+    padding-top: 15px;
+    width: 8.5in;
+    overflow: hidden;
+    background: white;
+    margin: auto;
+    box-shadow: 0 0 4px 2px #e1e1e1;
+    border: thin solid #e1e1e1;
+}
+
+.saveButton {
+    position: absolute;
+    right: 15px;
+    top: 8px;
+    border-style: none;
+    border-radius: 5px;
+    box-shadow: 0 0 4px 2px #e1e1e1;
+    background: #00BCD4;
+    color: white;
+    padding: 8px 10px;
+}
+
+.saveButton:hover, .changeLayout:hover {
+    background: #038ea0;
+}
+
+.changeLayout {
+    position: absolute;
+    right: 15px;
+    top: 50px;
+    border-style: none;
+    border-radius: 5px;
+    box-shadow: 0 0 4px 2px #e1e1e1;
+    background: #00BCD4;
+    color: white;
+    padding: 8px 10px;
+}

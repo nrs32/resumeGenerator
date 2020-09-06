@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<!--
+    So I can plug in info and create my own resume in the exact format I want easily because I'm tired of Optimal Resume
+    September 8, 2020
+-->
+
+<head>
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="resume.css">
+    <script type="text/javascript" src="./constants.js"></script>
+    <script type="text/javascript" src="./generateContent.js"></script>
+    <script type="text/javascript" src="./header.js"></script>
+    <script type="text/javascript" src="./educationSection.js"></script>
+    <script type="text/javascript" src="./experienceSection.js"></script>
+    <script type="text/javascript" src="./skillsSection.js"></script>
+    <script type="text/javascript" src="./achievementSection.js"></script>
+    <script type="text/javascript" src="./buttons.js"></script>
+</head>
+
+<body style="font-family: Tahoma; font-size: 0.916666666666667em; background: #f1f1f1;" id="body">
+    <div class="paper" id="paper">
+        <div style="width: 650px; margin: auto;">
+            <div id="resumeHeader"></div>
+            <div id="educationSection"></div>
+            <div style="height: 0.833333333333333em;" id="sectionDivider"></div> <!-- Space between sections -->
+            <div id="experienceSection"></div>
+            <div style="height: 0.833333333333333em;" id="sectionDivider"></div> <!-- Space between sections -->
+            <div id="skillsSection"></div>
+            <div style="height: 0.833333333333333em;" id="sectionDivider"></div> <!-- Space between sections -->
+            <div id="achievementSection"></div>
+        </div>
+    </div>
+    <button class="saveButton" id="saveButton" onClick="savePDF()">Save As PDF</button>
+    <button class="changeLayout" id="changeLayout" onClick="changeLayout()">Condensed Layout</button>
+    <script>generateContent();</script>
+</body>
+
+</html>
