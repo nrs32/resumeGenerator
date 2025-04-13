@@ -18,7 +18,7 @@ const generateExperienceSection = (experiences) => {
                     <span style="float:right; text-align:right;">${startDate} - ${endDate}</span>
                 </div>
                 <div>
-                    <i>${company} - ${location}</i>
+                    <i>${company} ${company && location ? '-' : ''} ${location}</i>
                     <ul style="padding-left: 28px; margin: 0px;">
                         ${body.map(listItem => `<li>${listItem}</li>`).join("")}
                     </ul>
