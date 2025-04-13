@@ -16,12 +16,15 @@ const generateEducationSection = (education) => {
                 <span>
                     <b>${school}</b> - <b>${location}</b> <br>
                     ${major} <br>
-                    Minor in ${minor} <br>
-                    Expected Graduation: ${graduation} <br>
-                    GPA: ${gpa} <br>
-                    ${other} <br>
+                    ${minor ? `Minor in ${minor} <br>` : ""}
+                    ${graduation ? `Graduated: ${graduation} <br>` : ""  }
+                    ${gpa ? `GPA: ${gpa} <br>` : "" }
                     <br>
-                    <b>Relevant Coursework: </b> ${releventCoursework}
+                    ${other} <br>
+                    ${releventCoursework 
+                    ? `<br>
+                       <b>Relevant Coursework: </b> ${releventCoursework}`
+                    : ""}
                 </span>
                 <div style="display:none;"></div>
             </div>`

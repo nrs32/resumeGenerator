@@ -10,11 +10,11 @@ const generateHeader = (name, phone, email, addrLine1, addrLine2) => {
             </div>
             <div style="float:right; width:50%; text-align:right;">
                 <div>${phone}</div>
-                <div>${email}</div>
+                ${email ? `<div>${email}</div>` : "" }
             </div>
             <div style="float:left; width:50%; text-align:left;">
                 <div>${addrLine1}</div>
-                <div>${addrLine2}</div>
+                ${addrLine2 ? `<div>${addrLine2}</div>` : "" }
             </div>
         </div>`
 }
