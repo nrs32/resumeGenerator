@@ -3,7 +3,7 @@ function generateContent() {
     generateHeader(name, phone, email, addrLine1, addrLine2);
     generateEducationSection(education);
     generateExperienceSection(experience);
-    generateSkillsSection(skills);
+    // generateSkillsSection(skills);
     // generateAchievementSection(achievements);
     generateTGSSection(trainGoSorry);
 }

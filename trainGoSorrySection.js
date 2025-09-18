@@ -9,9 +9,9 @@ const generateTGSSection = (tgs) => {
             <div>
                 <p><a href="https://train-go-sorry.com">TRAIN GO SORRY </a>${tgs.desc}</p>
                 <ul style="padding-left: 28px; margin: 0;">
-                    ${tgs.milestones.map(achievement => `<li>
-                    <div style="float: left; max-width: 5.8in">${achievement.description}</div>
-                    <div style="float: right;"> ${achievement.date}</div>
+                    ${tgs.milestones.map(achievement => `<li style="position: relative;">
+                    <div style="max-width: 5.8in">${achievement.description}</div>
+                    <div style="position: absolute; right: 0; top: 0;"> ${achievement.date}</div>
                     </li>`).join("")}
                 </ul>
             </div>`

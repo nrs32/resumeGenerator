@@ -15,6 +15,9 @@ function savePDF() {
     let changeLayout = document.getElementById('changeLayout');
     changeLayout.style.display = "none";
 
+    let currentLayout = document.getElementById('currentLayout');
+    currentLayout.style.display = "none";
+
     print();
 
     // Restore to defaults defined elseware
@@ -29,19 +32,28 @@ function savePDF() {
  */
 function changeLayout() {
     let changeLayout = document.getElementById('changeLayout');
-    changeLayout.textContent == "Condensed Layout" ? condensedDisplay(changeLayout) : defaultDisplay(changeLayout);
+    let currentLayout = document.getElementById('currentLayout');
+
+    currentLayout.textContent == "Default Layout" ? middleDisplay(currentLayout, changeLayout) : 
+    currentLayout.textContent == "Middle Layout" ?  condensedDisplay(currentLayout, changeLayout) :
+    defaultDisplay(currentLayout, changeLayout);
 }
 
 /**
  * Sets condensed layout by adjusting relevent html elements
  * Updates changeLayout to have value "condensed"
+ * @param currentLayout the div responsible for knowing which layout is currently being used
  * @param changeLayout the div responsible for knowing which layout is currently being used
  */
-function condensedDisplay(changeLayout) {
+function condensedDisplay(currentLayout, changeLayout) {
+    currentLayout.textContent = "Condensed Layout";
     changeLayout.textContent = "Default Layout";
 
     let body = document.getElementById('body');
     body.style.fontSize = "0.84em"
+
+    let experienceSection = document.getElementById('experienceSection');
+    experienceSection.style.marginBottom = "0";
 
     var elements = document.querySelectorAll('#sectionDivider');
     for (var i = 0; i < elements.length; i++) {
@@ -55,15 +67,47 @@ function condensedDisplay(changeLayout) {
 }
 
 /**
- * Sets default layout by adjusting relevent html elements
- * Updates changeLayout to have value "default"
+ * Sets condensed layout by adjusting relevent html elements
+ * Updates changeLayout to have value "condensed"
+ * @param currentLayout the div responsible for knowing which layout is currently being used
  * @param changeLayout the div responsible for knowing which layout is currently being used
  */
-function defaultDisplay(changeLayout) {
+function middleDisplay(currentLayout, changeLayout) {
+    currentLayout.textContent = "Middle Layout";
     changeLayout.textContent = "Condensed Layout";
 
     let body = document.getElementById('body');
+    body.style.fontSize = "0.89em"
+
+    let experienceSection = document.getElementById('experienceSection');
+    experienceSection.style.marginBottom = "10px";
+
+    var elements = document.querySelectorAll('#sectionDivider');
+    for (var i = 0; i < elements.length; i++) {
+        elements[i].style.display = "none";
+    }
+
+    var elements = document.querySelectorAll('.singleUnderline');
+    for (var i = 0; i < elements.length; i++) {
+        elements[i].style.marginBottom = "1.5em";
+    }
+}
+
+/**
+ * Sets default layout by adjusting relevent html elements
+ * Updates changeLayout to have value "default"
+ * @param currentLayout the div responsible for knowing which layout is currently being used
+ * @param changeLayout the div responsible for knowing which layout is currently being used
+ */
+function defaultDisplay(currentLayout, changeLayout) {
+    currentLayout.textContent = "Default Layout";
+    changeLayout.textContent = "Middle Layout";
+
+    let body = document.getElementById('body');
     body.style.fontSize = "0.91666em"
+
+    let experienceSection = document.getElementById('experienceSection');
+    experienceSection.style.marginBottom = "0";
 
     var elements = document.querySelectorAll('#sectionDivider');
     for (var i = 0; i < elements.length; i++) {

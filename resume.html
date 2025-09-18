@@ -8,8 +8,9 @@
 
 <head>
     <title>Resume Builder</title>
+    <meta charset="UTF-8">
     <link rel="stylesheet" href="resume.css">
-    <script type="text/javascript" src="./constants.js"></script>
+    <script type="text/javascript" src="./constants-alt.js"></script>
     <script type="text/javascript" src="./generateContent.js"></script>
     <script type="text/javascript" src="./header.js"></script>
     <script type="text/javascript" src="./educationSection.js"></script>
@@ -20,7 +21,9 @@
     <script type="text/javascript" src="./buttons.js"></script>
 </head>
 
-<body style="font-family: Tahoma; font-size: 0.916666666666667em; background: #f1f1f1;" id="body">
+<body style="font-family: Tahoma; font-size: 0.916666666666667em; background: #f1f1f1; text-wrap: pretty;" id="body">
+    <div id="currentLayout">Default Layout</div>
+
     <div class="paper" id="paper">
         <div style="width: 650px; margin: auto;">
             <div id="resumeHeader"></div>
@@ -36,7 +39,7 @@
         </div>
     </div>
     <button class="saveButton" id="saveButton" onClick="savePDF()">Save As PDF</button>
-    <button class="changeLayout" id="changeLayout" onClick="changeLayout()">Condensed Layout</button>
+    <button class="changeLayout" id="changeLayout" onClick="changeLayout()">Middle Layout</button>
     <script>generateContent();</script>
 </body>
 

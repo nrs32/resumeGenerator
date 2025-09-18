@@ -1,22 +1,13 @@
 const data = {
     name: "Nikita Sietsema",
     phone: "sietsenr@gmail.com",
-    // email: "sietsenr@gmail.com",
-    addrLine1: "616.780.8439",
-    // addrLine2: "Hudsonville, MI",
+    addrLine1: "driven • genuine • creative",
     education: [
         {
             school: "Calvin University",
             location: "Grand Rapids, MI",
             major: "Bachelor of Computer Science | May 2021 | GPA: 3.878 | Dean's List",
-            // minor: "Mathematics",
-            // graduation: "May 2021",
-            // gpa: "3.878 | Dean's List",
             other: "Awarded the Calvin Computing Award by the Department of CS as one of its top graduating seniors in 2021.",
-            // releventCoursework: `Web Development, Software Engineering,
-            // Database Management Systems, Programming Language Concepts, Data Structures and Algorithms,
-            // Advanced Computer Networking, Logic and Complexity, Discrete Mathematics for Computer Science,
-            // Intro to Computer Architecture`
         }
     ],
     experience: [
@@ -24,42 +15,26 @@ const data = {
             position: "Software Development Consultant",
             company: "Vervint (formerly OST)",
             location: "Grand Rapids, MI",
-            startDate: "Aug 2022",
+            startDate: "May 2021",
             endDate: "Present",
             body: [
-                `Built and integrated a portal application with 14 micro-front-ends using Angular Module Federation`, 
+                `Maintained and developed 14 applications to manage the manufacturing process of railway cars (e.g. molding, pouring metal, assembling & welding parts, etc)`, 
+                
+                `Built and integrated a portal app with 14 micro-frontends via Angular Module Federation`, 
+                
+                `Created 457+ Azure Functions to automate product movement accross apps`, 
 
-                `Maintain and develop 14 applications to manage the manufacturing process of railway cars`, 
+                `Implemented an integration testing suite and CI/CD pipeline step to automatically verify code quality after deployment`,
 
-                `Created 457+ Azure Functions to handle product movement between apps as defined by client diagrams`, 
+                `Trusted by devs on other projects for assistance when they encounter bugs and challenges`, 
 
-                `Trusted by devs on other projects for assistance when they encounter bugs or other challenges`, 
+                `Created and utilized 7+ npm and 10+ NuGet packages to reuse code across applications`, 
 
-                `Design and build full-stack features in existing apps`, 
-
-                `Improved the load time of numerous apps from 2+ minutes to <1 second by lazy loading images`, 
-
-                `Quickly context-switch to urgent and high-priority bugs`, 
-
-                `Create and utilize 7+ npm and 10+ NuGet packages to reuse code across applications`, 
-
-                // `Build scripts to accelerate otherwise repetitive code changes`, 
-            ]
-        },
-        {
-            position: "Software Developer",
-            company: "Vervint (formerly OST)",
-            location: "Grand Rapids, MI",
-            startDate: "May 2021",
-            endDate: "Aug 2022",
-            body: [
-                `Research, analyze, design, develop, and test custom software solutions`,
-
-                `Develop strong relationships with clients and development teams`,
-
-                `Built an RFID tracking management system to be used in railway manufacturing facilities to track the location of parts as they move through the warehouse`,
-
-                // `Built a series of interconnected apps to automate a multitude of manufacturing processes involved in the production of railway cars and parts, namely the melting, molding, pouring, welding, assembly, and disassembly of parts`
+                `Built an RFID tracking management system to monitor parts throughout a warehouse in real time`,
+                
+                `Quickly pivoted to prioritize and resolve urgent and production-critical issues`, 
+                
+                `Tech Stack: Angular, C#, .Net, Entity Framework, SQL, Azure Functions`, 
             ]
         },
         {
@@ -69,17 +44,18 @@ const data = {
             startDate: "April 2018",
             endDate: "May 2021",
             body: [
-                `Use JavaScript, HTML, CSS, and React/Redux daily to create functional and visually pleasing components that visualize school data to improve education`,
+                `Crafted interactive and intuitive features that visualize school data to improve education`,
 
-                `Created 117 visualizations of school data that help educators analyze trends to improve student success`,
+                `Created 117 visualizations of school data that help educators analyze trends`,
 
-                `Designed and Developed the home page for our Portal site`,
+                `Prototyped and delivered a feature allowing educators to manage, compare, and visualize targets for student performance (e.g. standardized test scores, attendance, behavior etc)`,
 
-                `Developed batch report generation that allows users to export an app page by a
+                `Designed and developed the home page for a new Portal site`,
+
+                `Built batch report generation that allows users to export an app page by a
                  specified field such as teacher, grade, or ethnicity`,
-
-                // `Contributed to prospectus for the QA team to reference by explaining the intended
-                // functionality of over 31 components`
+                 
+                 `Tech Stack: React, Redux, C#, .Net, Entity Framework, SQL, QlikSense`, 
             ]
         },
         {
@@ -129,7 +105,7 @@ const data = {
         ]
     },
     trainGoSorry: {
-        desc: "is an American Sign Language (ASL) study tool to help students practice ASL vocabulary receptively. I developed this tool with two of my peers from Calvin University as our senior project and am still adding features today.",
+        desc: "is an American Sign Language (ASL) study tool to help students practice ASL vocabulary receptively. I developed this tool with two of my peers from Calvin University as our senior project and continue to enhance it today.",
         milestones: [
             {
                 date: "March 2024",
@@ -143,6 +119,10 @@ const data = {
                 date: "Dec 2020",
                 description: "Finalist for the NCWIT Collegiate Award that honors the outstanding computing accomplishments of women on projects with a high level of innovation and potential impact"
             },
+            {
+                date: "  ",
+                description: `Tech Stack: Ionic, Angular, Firebase`, 
+            }
         ]
     },
     achievements: [
