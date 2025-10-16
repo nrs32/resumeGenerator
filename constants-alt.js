@@ -18,11 +18,11 @@ const data = {
             startDate: "May 2021",
             endDate: "Present",
             body: [
-                `Maintained and developed 14 applications to manage the manufacturing process of railway cars (e.g. molding, pouring metal, assembling & welding parts, etc)`, 
+                `Maintained and developed 14 applications to manage the manufacturing process of railway cars (e.g., molding, pouring metal, assembling & welding parts, etc)`, 
                 
                 `Built and integrated a portal app with 14 micro-frontends via Angular Module Federation`, 
                 
-                `Created 457+ Azure Functions to automate product movement accross apps`, 
+                `Created 457+ Azure Functions to automate product movement across apps`, 
 
                 `Implemented an integration testing suite and CI/CD pipeline step to automatically verify code quality after deployment`,
 
@@ -70,7 +70,7 @@ const data = {
                 `Inspire and support girls and their interests in Computer Science and STEM`,
 
                 `Manage logistics for recruiting, organizing, and running Girls Who Code at Calvin
-                 University including determining budgets, teaching timelines, and communication with parents`
+                 University, including determining budgets, teaching timelines, and communication with parents`
             ]
         },
         // {

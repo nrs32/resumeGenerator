@@ -94,7 +94,7 @@ const data = {
                 `Inspire and support girls and their interests in Computer Science and STEM`,
 
                 `Manage logistics for recruiting, organizing, and running Girls Who Code at Calvin
-                 University including determining budgets, teaching timelines, and communication with parents`
+                 University, including determining budgets, teaching timelines, and communication with parents`
             ]
         },
         // {
